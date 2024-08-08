@@ -1,0 +1,597 @@
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking which template to use... linux
+checking whether NLS is wanted... yes
+checking for default port number... 5432
+checking for block size... 8kB
+checking for segment size... 1GB
+checking for WAL block size... 8kB
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking for gawk... no
+checking for mawk... mawk
+checking for llvm-config... /usr/bin/llvm-config
+checking for clang... /usr/bin/clang
+checking whether to build with PFSD support... no
+checking whether to build with DMA support... no
+checking whether gcc supports -Wdeclaration-after-statement, for CFLAGS... yes
+checking whether gcc supports -Wendif-labels, for CFLAGS... yes
+checking whether g++ supports -Wendif-labels, for CXXFLAGS... yes
+checking whether gcc supports -Wmissing-format-attribute, for CFLAGS... yes
+checking whether g++ supports -Wmissing-format-attribute, for CXXFLAGS... yes
+checking whether gcc supports -Wformat-security, for CFLAGS... yes
+checking whether g++ supports -Wformat-security, for CXXFLAGS... yes
+checking whether gcc supports -fno-strict-aliasing, for CFLAGS... yes
+checking whether g++ supports -fno-strict-aliasing, for CXXFLAGS... yes
+checking whether gcc supports -fwrapv, for CFLAGS... yes
+checking whether g++ supports -fwrapv, for CXXFLAGS... yes
+checking whether gcc supports -fexcess-precision=standard, for CFLAGS... yes
+checking whether g++ supports -fexcess-precision=standard, for CXXFLAGS... no
+checking whether gcc supports -funroll-loops, for CFLAGS_VECTOR... yes
+checking whether gcc supports -ftree-vectorize, for CFLAGS_VECTOR... yes
+checking whether gcc supports -Wunused-command-line-argument, for NOT_THE_CFLAGS... no
+checking whether gcc supports -Wformat-truncation, for NOT_THE_CFLAGS... yes
+checking whether gcc supports -Wstringop-truncation, for NOT_THE_CFLAGS... yes
+checking whether /usr/bin/clang supports -fno-strict-aliasing, for BITCODE_CFLAGS... yes
+checking whether /usr/bin/clang -xc++ supports -fno-strict-aliasing, for BITCODE_CXXFLAGS... yes
+checking whether /usr/bin/clang supports -fwrapv, for BITCODE_CFLAGS... yes
+checking whether /usr/bin/clang -xc++ supports -fwrapv, for BITCODE_CXXFLAGS... yes
+checking whether /usr/bin/clang supports -fexcess-precision=standard, for BITCODE_CFLAGS... no
+checking whether /usr/bin/clang -xc++ supports -fexcess-precision=standard, for BITCODE_CXXFLAGS... no
+checking whether /usr/bin/clang supports -Xclang -no-opaque-pointers, for BITCODE_CFLAGS... yes
+checking whether /usr/bin/clang -xc++ supports -Xclang -no-opaque-pointers, for BITCODE_CXXFLAGS... yes
+checking whether /usr/bin/clang supports -Wunused-command-line-argument, for NOT_THE_CFLAGS... yes
+checking whether /usr/bin/clang supports -Wcompound-token-split-by-macro, for NOT_THE_CFLAGS... yes
+checking whether /usr/bin/clang supports -Wdeprecated-non-prototype, for NOT_THE_CFLAGS... yes
+checking whether /usr/bin/clang supports -Wformat-truncation, for NOT_THE_CFLAGS... no
+checking whether /usr/bin/clang supports -Wstringop-truncation, for NOT_THE_CFLAGS... no
+checking whether the C compiler still works... yes
+checking how to run the C preprocessor... gcc -E
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether to build with faults injector enable... no
+checking whether to build with PXOPT... no
+checking whether to build with PXOPT debug mode... no
+checking allow thread-safe client libraries... yes
+checking whether to build with ICU support... yes
+checking for icu-uc icu-i18n... yes
+checking whether to build with Tcl... yes
+checking whether to build Perl modules... yes
+checking whether to build Python modules... yes
+checking whether to build with GSSAPI support... yes
+checking whether to build with PAM support... yes
+checking whether to build with BSD Authentication support... no
+checking whether to build with LDAP support... yes
+checking whether to build with Bonjour support... no
+checking whether to build with OpenSSL support... yes
+checking whether to build with SELinux support... no
+checking whether to build with systemd support... no
+checking whether to build with XML support... yes
+checking for libxml-2.0 >= 2.6.23... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for ranlib... ranlib
+checking for strip... strip
+checking whether it is possible to strip libraries... yes
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for tar... /usr/bin/tar
+checking whether ln -s works... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for bison... /usr/bin/bison
+configure: using bison (GNU Bison) 3.8.2
+checking for flex... /usr/bin/flex
+configure: using flex 2.6.4
+checking for perl... /usr/bin/perl
+configure: using perl 5.34.0
+checking for Perl archlibexp... /usr/lib/x86_64-linux-gnu/perl/5.34
+checking for Perl privlibexp... /usr/share/perl/5.34
+checking for Perl useshrplib... true
+checking for CFLAGS recommended by Perl... -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+checking for CFLAGS to compile embedded Perl... -DDEBIAN 
+checking for flags to link embedded Perl...   -fstack-protector-strong -L/usr/local/lib  -L/usr/lib/x86_64-linux-gnu/perl/5.34/CORE -lperl -ldl -lm -lpthread -lc -lcrypt
+checking for python... no
+checking for python3... /usr/bin/python3
+configure: using python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
+checking for Python distutils module... yes
+checking Python configuration directory... /usr/lib/python3.10/config-3.10-x86_64-linux-gnu
+checking Python include directories... -I/usr/include/python3.10
+checking how to link an embedded Python application... -L/usr/lib/x86_64-linux-gnu -lpython3.10 -lcrypt -ldl  -lm -lm
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking if compiler needs certain flags to reject unknown flags... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for strerror_r... yes
+checking for getpwuid_r... yes
+checking for gethostbyname_r... yes
+checking whether strerror_r returns int... no
+checking for main in -lm... yes
+checking for library containing setproctitle... no
+checking for library containing dlopen... none required
+checking for library containing socket... none required
+checking for library containing shl_load... no
+checking for library containing getopt_long... none required
+checking for library containing crypt... -lcrypt
+checking for library containing shm_open... none required
+checking for library containing shm_unlink... none required
+checking for library containing clock_gettime... none required
+checking for library containing fdatasync... none required
+checking for library containing sched_yield... none required
+checking for library containing gethostbyname_r... none required
+checking for library containing shmget... none required
+checking for library containing readline... -lreadline
+checking for inflate in -lz... yes
+checking for library containing gss_init_sec_context... -lgssapi_krb5
+checking for CRYPTO_new_ex_data in -lcrypto... yes
+checking for SSL_new in -lssl... yes
+checking for SSL_get_current_compression... yes
+checking for X509_get_signature_nid... yes
+checking for OPENSSL_init_ssl... yes
+checking for OPENSSL_init_crypto... yes
+checking for BIO_get_data... yes
+checking for BIO_meth_new... yes
+checking for ASN1_STRING_get0_data... yes
+checking for RAND_OpenSSL... yes
+checking for EVP_PKEY_derive... yes
+checking for CRYPTO_lock... no
+checking for SSL_clear_options... yes
+checking for pam_start in -lpam... yes
+checking for xmlSaveToBuffer in -lxml2... yes
+checking for xsltCleanupGlobals in -lxslt... yes
+checking for ldap_bind in -lldap... yes
+checking for ldap_simple_bind in -lldap_r... yes
+checking for ldap_initialize... yes
+checking for uuid_generate... no
+checking for uuid_generate in -luuid... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking atomic.h usability... no
+checking atomic.h presence... no
+checking for atomic.h... no
+checking crypt.h usability... yes
+checking crypt.h presence... yes
+checking for crypt.h... yes
+checking dld.h usability... no
+checking dld.h presence... no
+checking for dld.h... no
+checking fp_class.h usability... no
+checking fp_class.h presence... no
+checking for fp_class.h... no
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking ifaddrs.h usability... yes
+checking ifaddrs.h presence... yes
+checking for ifaddrs.h... yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking mbarrier.h usability... no
+checking mbarrier.h presence... no
+checking for mbarrier.h... no
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/epoll.h usability... yes
+checking sys/epoll.h presence... yes
+checking for sys/epoll.h... yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/pstat.h usability... no
+checking sys/pstat.h presence... no
+checking for sys/pstat.h... no
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/sem.h usability... yes
+checking sys/sem.h presence... yes
+checking for sys/sem.h... yes
+checking sys/shm.h usability... yes
+checking sys/shm.h presence... yes
+checking for sys/shm.h... yes
+checking sys/sockio.h usability... no
+checking sys/sockio.h presence... no
+checking for sys/sockio.h... no
+checking sys/tas.h usability... no
+checking sys/tas.h presence... no
+checking for sys/tas.h... no
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking ucred.h usability... no
+checking ucred.h presence... no
+checking for ucred.h... no
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for net/if.h... yes
+checking for sys/ucred.h... no
+checking for netinet/tcp.h... yes
+checking openssl/kdf.h usability... yes
+checking openssl/kdf.h presence... yes
+checking for openssl/kdf.h... yes
+checking readline/readline.h usability... yes
+checking readline/readline.h presence... yes
+checking for readline/readline.h... yes
+checking readline/history.h usability... yes
+checking readline/history.h presence... yes
+checking for readline/history.h... yes
+checking zlib.h usability... yes
+checking zlib.h presence... yes
+checking for zlib.h... yes
+checking gssapi/gssapi.h usability... yes
+checking gssapi/gssapi.h presence... yes
+checking for gssapi/gssapi.h... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking openssl/err.h usability... yes
+checking openssl/err.h presence... yes
+checking for openssl/err.h... yes
+checking security/pam_appl.h usability... yes
+checking security/pam_appl.h presence... yes
+checking for security/pam_appl.h... yes
+checking libxml/parser.h usability... yes
+checking libxml/parser.h presence... yes
+checking for libxml/parser.h... yes
+checking libxslt/xslt.h usability... yes
+checking libxslt/xslt.h presence... yes
+checking for libxslt/xslt.h... yes
+checking ldap.h usability... yes
+checking ldap.h presence... yes
+checking for ldap.h... yes
+checking for compatible LDAP implementation... yes
+checking uuid/uuid.h usability... yes
+checking uuid/uuid.h presence... yes
+checking for uuid/uuid.h... yes
+checking whether byte ordering is bigendian... no
+checking for inline... inline
+checking for printf format archetype... gnu_printf
+checking for flexible array members... yes
+checking for signed types... yes
+checking for __func__... yes
+checking for _Static_assert... yes
+checking for typeof... typeof
+checking for __builtin_types_compatible_p... yes
+checking for __builtin_bswap16... yes
+checking for __builtin_bswap32... yes
+checking for __builtin_bswap64... yes
+checking for __builtin_constant_p... yes
+checking for __builtin_unreachable... yes
+checking for computed goto support... yes
+checking for __VA_ARGS__... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for tzname... yes
+checking for union semun... no
+checking for struct sockaddr_un... yes
+checking for struct sockaddr_storage... yes
+checking for struct sockaddr_storage.ss_family... yes
+checking for struct sockaddr_storage.__ss_family... no
+checking for struct sockaddr_storage.ss_len... no
+checking for struct sockaddr_storage.__ss_len... no
+checking for struct sockaddr.sa_len... no
+checking for struct addrinfo... yes
+checking for intptr_t... yes
+checking for uintptr_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for locale_t... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct cmsgcred... no
+checking for struct option... yes
+checking for z_streamp... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking size of off_t... 8
+checking size of bool... 1
+checking for int timezone... yes
+checking types of arguments for accept()... int, int, struct sockaddr *, socklen_t *
+checking whether gettimeofday takes only one argument... no
+checking for wcstombs_l declaration... no
+checking for cbrt... yes
+checking for clock_gettime... yes
+checking for dlopen... yes
+checking for fdatasync... yes
+checking for getifaddrs... yes
+checking for getpeerucred... no
+checking for getrlimit... yes
+checking for mbstowcs_l... no
+checking for memmove... yes
+checking for poll... yes
+checking for posix_fallocate... yes
+checking for pstat... no
+checking for pthread_is_threaded_np... no
+checking for readlink... yes
+checking for setproctitle... no
+checking for setsid... yes
+checking for shm_open... yes
+checking for strsignal... yes
+checking for symlink... yes
+checking for sync_file_range... yes
+checking for uselocale... yes
+checking for utime... yes
+checking for utimes... yes
+checking for wcstombs_l... no
+checking for fseeko... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking how gcc reports undeclared, standard C functions... error
+checking for posix_fadvise... yes
+checking whether posix_fadvise is declared... yes
+checking whether fdatasync is declared... yes
+checking whether strlcat is declared... no
+checking whether strlcpy is declared... no
+checking whether strnlen is declared... yes
+checking whether F_FULLFSYNC is declared... no
+checking for struct sockaddr_in6... yes
+checking for PS_STRINGS... no
+checking for snprintf... yes
+checking for vsnprintf... yes
+checking whether snprintf is declared... yes
+checking whether vsnprintf is declared... yes
+checking for isinf... yes
+checking for crypt... yes
+checking for fls... no
+checking for getopt... yes
+checking for getrusage... yes
+checking for inet_aton... yes
+checking for mkdtemp... yes
+checking for random... yes
+checking for rint... yes
+checking for srandom... yes
+checking for strerror... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking for strnlen... yes
+checking for unsetenv... yes
+checking for getpeereid... no
+checking for getaddrinfo... yes
+checking for getopt_long... yes
+checking for syslog... yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking for opterr... yes
+checking for optreset... no
+checking for strtoll... yes
+checking for strtoull... yes
+checking whether strtoll is declared... yes
+checking whether strtoull is declared... yes
+checking unicode/ucol.h usability... yes
+checking unicode/ucol.h presence... yes
+checking for unicode/ucol.h... yes
+checking whether LLVMOrcGetSymbolAddressIn is declared... no
+checking whether LLVMGetHostCPUName is declared... yes
+checking whether LLVMGetHostCPUFeatures is declared... yes
+checking whether LLVMCreateGDBRegistrationListener is declared... yes
+checking whether LLVMCreatePerfJITEventListener is declared... yes
+checking for rl_completion_append_character... yes
+checking for rl_completion_matches... yes
+checking for rl_filename_completion_function... yes
+checking for rl_reset_screen_size... yes
+checking for append_history... yes
+checking for history_truncate_file... yes
+checking test program... ok
+checking whether snprintf supports argument control... yes
+checking whether long int is 64 bits... yes
+checking whether snprintf supports the %z modifier... yes
+checking for __builtin_mul_overflow... yes
+checking size of void *... 8
+checking size of size_t... 8
+checking size of long... 8
+checking whether to build with float4 passed by value... yes
+checking whether to build with float8 passed by value... yes
+checking alignment of short... 2
+checking alignment of int... 4
+checking alignment of long... 8
+checking alignment of double... 8
+checking for int8... no
+checking for uint8... no
+checking for int64... no
+checking for uint64... no
+checking for __int128... yes
+checking for __int128 alignment bug... ok
+checking alignment of PG_INT128_TYPE... 16
+checking for builtin __sync char locking functions... yes
+checking for builtin __sync int32 locking functions... yes
+checking for builtin __sync int32 atomic operations... yes
+checking for builtin __sync int64 atomic operations... yes
+checking for builtin __atomic int32 atomic operations... yes
+checking for builtin __atomic int64 atomic operations... yes
+checking for __get_cpuid... yes
+checking for __cpuid... no
+checking for _mm_crc32_u8 and _mm_crc32_u32 with CFLAGS=... no
+checking for _mm_crc32_u8 and _mm_crc32_u32 with CFLAGS=-msse4.2... yes
+checking for __crc32cb, __crc32ch, __crc32cw, and __crc32cd with CFLAGS=... no
+checking for __crc32cb, __crc32ch, __crc32cw, and __crc32cd with CFLAGS=-march=armv8-a+crc... no
+checking which CRC-32C implementation to use... SSE 4.2 with runtime check
+checking for library containing sem_init... none required
+checking which semaphore API to use... unnamed POSIX
+checking which random number source to use... OpenSSL
+checking for library containing bind_textdomain_codeset... none required
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking for msgfmt... /usr/bin/msgfmt
+checking for msgfmt flags... -c
+checking for msgmerge... /usr/bin/msgmerge
+checking for xgettext... /usr/bin/xgettext
+checking for tclsh... /usr/bin/tclsh
+checking for tclConfig.sh... /usr/lib/tclConfig.sh
+checking tcl.h usability... yes
+checking tcl.h presence... yes
+checking for tcl.h... yes
+checking for perl.h... yes
+checking for libperl... yes
+checking Python.h usability... yes
+checking Python.h presence... yes
+checking for Python.h... yes
+checking for xmllint... no
+checking for DocBook XML V4.2... no
+checking for dbtoepub... no
+checking for xsltproc... no
+checking for fop... no
+checking thread safety of required library functions... yes
+checking whether gcc supports -Wl,--as-needed... yes
+configure: using compiler=gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+configure: using CFLAGS=-Wall -Wmissing-prototypes -Wpointer-arith -Wdeclaration-after-statement -Wendif-labels -Wmissing-format-attribute -Wformat-security -fno-strict-aliasing -fwrapv -fexcess-precision=standard -Wno-format-truncation -Wno-stringop-truncation   -g -pipe -Wall -grecord-gcc-switches -I/usr/include/et -O3
+configure: using CPPFLAGS= -D_GNU_SOURCE -I/usr/include/libxml2 
+configure: using LDFLAGS=-Wl,-rpath,'$$ORIGIN/../lib' -L/usr/lib/llvm-15/lib  -Wl,--as-needed
+configure: using CXX=g++
+configure: using CXXFLAGS=-Wall -Wpointer-arith -Wendif-labels -Wmissing-format-attribute -Wformat-security -fno-strict-aliasing -fwrapv -g -pipe -Wall -grecord-gcc-switches -I/usr/include/et -O3
+configure: using CLANG=/usr/bin/clang
+configure: using BITCODE_CFLAGS= -fno-strict-aliasing -fwrapv -Xclang -no-opaque-pointers -Wno-unused-command-line-argument -Wno-compound-token-split-by-macro -Wno-deprecated-non-prototype -O2 
+configure: using BITCODE_CXXFLAGS= -fno-strict-aliasing -fwrapv -Xclang -no-opaque-pointers -O2 
+configure: creating ./config.status
+config.status: creating GNUmakefile
+config.status: creating src/Makefile.global
+config.status: creating src/include/pg_config.h
+config.status: creating src/include/pg_config_ext.h
+config.status: creating src/interfaces/ecpg/include/ecpg_config.h
+config.status: linking src/backend/port/tas/dummy.s to src/backend/port/tas.s
+config.status: linking src/backend/port/dynloader/linux.c to src/backend/port/dynloader.c
+config.status: linking src/backend/port/posix_sema.c to src/backend/port/pg_sema.c
+config.status: linking src/backend/port/sysv_shmem.c to src/backend/port/pg_shmem.c
+config.status: linking src/backend/port/dynloader/linux.h to src/include/dynloader.h
+config.status: linking src/include/port/linux.h to src/include/pg_config_os.h
+config.status: linking src/makefiles/Makefile.linux to src/Makefile.port
+All of PostgreSQL successfully made. Ready to install.
+PostgreSQL installation complete.
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+Data encryption is disabled.
+
+fixing permissions on existing directory /home/postgres/tmp_master_dir_polardb_pg_1100_bld ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default timezone ... Asia/Shanghai
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    /home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/pg_ctl -D /home/postgres/tmp_master_dir_polardb_pg_1100_bld -l logfile start
+
+use localfs mode
+list base dir file 1
+13163
+13164
+13165
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/base/1/112
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/base/13163/112
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/base/13164/112
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/base/13165/112
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/global/1136
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_wal
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_logindex
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_twophase
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_xact
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_commit_ts
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_multixact
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/pg_csnlog
+delete /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_dma
+init polarDB data dir success
+waiting for server to start....2024-07-19 00:27:41.716 CST [31629] [31629] LOG:  /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_node_static.conf does not exist, we create it, This is best done on the first boot and not on restart
+2024-07-19 00:27:41.724 CST [31629] [31629] WARNING:  polardb skip readControlfile
+2024-07-19 00:27:41.724 CST [31629] [31629] LOG:  recovery.conf not exist, polardb in readwrite mode
+2024-07-19 00:27:41.726 CST [31629] [31629] LOG:  polar_vfs loaded in postmaster 31629
+2024-07-19 00:27:41.727 CST [31629] [31629] WARNING:  could not access file "polar_resource_group": No such file or directory
+2024-07-19 00:27:41.731 CST [31629] [31629] LOG:  Auto detecting polar_stat_sql.linux_hz parameter...
+2024-07-19 00:27:41.731 CST [31629] [31629] LOG:  polar_stat_sql.linux_hz is set to 1000000
+2024-07-19 00:27:41.735 CST [31629] [31629] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2024-07-19 00:27:41.735 CST [31629] [31629] LOG:  listening on IPv6 address "::", port 5432
+2024-07-19 00:27:41.738 CST [31629] [31629] LOG:  listening on Unix socket "./.s.PGSQL.5432"
+2024-07-19 00:27:41.740 CST [31629] [31629] LOG:  clog buffer max slot size is 4096, and it will be set to 512
+2024-07-19 00:27:41.740 CST [31629] [31629] LOG:  commit timestamp buffer max slot size is 2048, and it will set to 16
+2024-07-19 00:27:41.740 CST [31629] [31629] LOG:  The total log index memory table size is 402525536
+2024-07-19 00:27:41.740 CST [31629] [31629] LOG:  The total log index memory table size is 133987136
+2024-07-19 00:27:41.740 CST [31629] [31629] LOG:  The total log index memory table size is 66993872
+2024-07-19 00:27:41.742 CST [31629] [31629] LOG:  init vfs_mount_state done
+2024-07-19 00:27:41.742 CST [31629] [31629] LOG:  Database will be in readwrite mode
+2024-07-19 00:27:41.742 CST [31629] [31629] LOG:  pfs in localfs mode
+2024-07-19 00:27:41.742 CST [31629] [31629] LOG:  PolarIOStatArray share memory total size is 697320
+2024-07-19 00:27:41.743 CST [31629] [31629] LOG:  PolarGlobalIOReadStats share memory size is 176
+2024-07-19 00:27:41.743 CST [31629] [31629] LOG:  polar_vfs init done
+2024-07-19 00:27:41.743 CST [31629] [31629] LOG:  polar_lwlocks_stat_array share memory total size is 757760
+2024-07-19 00:27:41.743 CST [31629] [31629] LOG:  polar_locks_stat_array share memory total size is 473600
+2024-07-19 00:27:41.743 CST [31629] [31629] LOG:  polar_network_stat_array share memory total size is 14304
+2024-07-19 00:27:41.745 CST [31629] [31629] LOG:  polardb delay load controlfile
+2024-07-19 00:27:41.754 CST [31629] [31629] LOG:  clog buffer max slot size is 4096, and it will be set to 512
+2024-07-19 00:27:41.754 CST [31629] [31629] LOG:  commit timestamp buffer max slot size is 2048, and it will set to 16
+2024-07-19 00:27:41.760 CST [31629] [31629] LOG:  The total log index memory table size is 402525536
+2024-07-19 00:27:41.760 CST [31629] [31629] LOG:  vfs open dir /home/postgres/tmp_master_dir_polardb_pg_1100_bld/polar_rel_size_cache, num open dir 1
+2024-07-19 00:27:41.947 CST [31629] [31629] LOG:  rename pg_logindex to local cache trash polar_cache_trash/pg_logindex_0000, errno=2
+2024-07-19 00:27:41.948 CST [31629] [31629] LOG:  The total log index memory table size is 133987136
+2024-07-19 00:27:41.948 CST [31629] [31629] LOG:  creating missing directory "file-dio:///home/postgres/tmp_datadir_polardb_pg_1100_bld/polar_fullpage"
+2024-07-19 00:27:41.948 CST [31629] [31629] LOG:  rename polar_fullpage to local cache trash polar_cache_trash/polar_fullpage_0001, errno=39
+2024-07-19 00:27:41.962 CST [31629] [31629] LOG:  The total log index memory table size is 66993872
+2024-07-19 00:27:41.968 CST [31629] [31629] LOG:  vfs open dir pg_notify, num open dir 1
+2024-07-19 00:27:41.968 CST [31629] [31629] LOG:  removing file "pg_notify/0000"
+2024-07-19 00:27:41.968 CST [31629] [31629] LOG:  vfs_unlink pg_notify/0000
+2024-07-19 00:27:41.969 CST [31629] [31629] LOG:  forked new process, pid is 31630, true pid is 31630
+2024-07-19 00:27:41.969 CST [31629] [31629] LOG:  redirecting log output to logging collector process
+2024-07-19 00:27:41.969 CST [31629] [31629] HINT:  Future log output will appear in directory "pg_log".
+. done
+server started
+su_eval /home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/pg_ctl -D /home/postgres/tmp_master_dir_polardb_pg_1100_bld reload
+server signaled
+Following command can be used to connect to PG:
+
+su postgres -c "/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/psql -h 127.0.0.1 -p 5432 postgres"
+su postgres -c "/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/psql -h 127.0.0.1 -p 5433 postgres"
+su postgres -c "/home/postgres/tmp_basedir_polardb_pg_1100_bld/bin/psql -h 127.0.0.1 -p 5435 postgres"
+
+rds build done

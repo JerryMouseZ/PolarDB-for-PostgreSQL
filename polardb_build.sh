@@ -786,6 +786,7 @@ fi
 
 if [[ $noinit == "no" ]];
 then
+echo "su_eval $pg_bld_basedir/bin/pg_ctl -D $pg_bld_master_dir reload"
 su_eval "$pg_bld_basedir/bin/pg_ctl -D $pg_bld_master_dir reload"
 fi
 
