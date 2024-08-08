@@ -487,8 +487,8 @@ start_postmaster(void)
 		snprintf(cmd, MAXPGPATH, "exec \"%s\" %s%s < \"%s\" 2>&1",
 				 exec_path, pgdata_opt, post_opts, DEVNULL);
 
+	printf("exec %s\n", cmd);
 	(void) execl("/bin/sh", "/bin/sh", "-c", cmd, (char *) NULL);
-
 	/* exec failed */
 	write_stderr(_("%s: could not start server: %s\n"),
 				 progname, strerror(errno));
