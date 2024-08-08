@@ -87,6 +87,15 @@ static bool _bt_isequal(TupleDesc itupdesc, Page page, OffsetNumber offnum,
 			int keysz, ScanKey scankey);
 static void _bt_vacuum_one_page(Relation rel, Buffer buffer, Relation heapRel);
 
+bool _bt_should_cache(Relation rel, IndexUniqueCheck checkUnique) {
+	return true;
+}
+
+bool
+_bt_doinsert_cache(Relation rel, IndexTuple itup,
+			 IndexUniqueCheck checkUnique, Relation heapRel) {
+	
+}
 /*
  *	_bt_doinsert() -- Handle insertion of a single index tuple in the tree.
  *

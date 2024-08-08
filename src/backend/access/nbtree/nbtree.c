@@ -200,8 +200,12 @@ btinsert(Relation rel, Datum *values, bool *isnull,
 	/* generate an index tuple */
 	itup = index_form_tuple(RelationGetDescr(rel), values, isnull);
 	itup->t_tid = *ht_ctid;
-
-	result = _bt_doinsert(rel, itup, checkUnique, heapRel);
+	// here
+	if (_bt_should_cache(rel, checkUnique)) {
+		_bt_doinsert_cache(rel, itup, checkUnique, heapRel);
+	} else {
+		result = _bt_doinsert(rel, itup, checkUnique, heapRel);
+	}
 
 	pfree(itup);
 

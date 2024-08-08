@@ -1,0 +1,1 @@
+./configure --prefix=/home/postgres/tmp_basedir_polardb_pg_1100_bld --with-pgport=5432   --with-openssl --with-libxml --with-perl --with-python --with-tcl --with-pam --with-gssapi --enable-nls --with-libxslt --with-ldap --with-uuid=e2fs --with-icu --with-llvm

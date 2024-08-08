@@ -22,6 +22,8 @@
 #include "lib/stringinfo.h"
 #include "storage/bufmgr.h"
 #include "storage/shm_toc.h"
+#include "access/skiplist/skiplist.h"
+#include "access/skiplist/map.h"
 
 /* There's room for a 16-bit vacuum cycle ID in BTPageOpaqueData */
 typedef uint16 BTCycleId;
@@ -528,6 +530,9 @@ extern void _bt_parallel_advance_array_keys(IndexScanDesc scan);
  */
 extern bool _bt_doinsert(Relation rel, IndexTuple itup,
 			 IndexUniqueCheck checkUnique, Relation heapRel);
+extern bool _bt_doinsert_cache(Relation rel, IndexTuple itup,
+			 IndexUniqueCheck checkUnique, Relation heapRel);
+extern bool _bt_should_cache(Relation rel, IndexUniqueCheck checkUnique);
 extern Buffer _bt_getstackbuf(Relation rel, BTStack stack, int access);
 extern void _bt_finish_split(Relation rel, Buffer bbuf, BTStack stack);
 
